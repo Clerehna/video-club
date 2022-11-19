@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  year: 2022-11-19
+  genre: MyString
+  poster_url: MyString
+  director: one
+
+two:
+  title: MyString
+  year: 2022-11-19
+  genre: MyString
+  poster_url: MyString
+  director: two

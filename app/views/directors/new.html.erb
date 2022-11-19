@@ -1,0 +1,8 @@
+<h1>Add a new director</h1>
+
+<%= simple_form_for [@director] do |f| %>
+  <%= f.input :name %>
+  <%= f.submit "Add a director" %>
+<% end %>
+
+<%= link_to "Page d'accueil", directors_path(@director) %>

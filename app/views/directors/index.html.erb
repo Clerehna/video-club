@@ -1,0 +1,10 @@
+<div class="container">
+<h1>Directors</h1>
+<ul>
+<% @directors.each do |director| %>
+  <li><%= link_to director.name, director_path(director)%></li>
+<% end %>
+</ul>
+
+<%= link_to "Add a director", new_director_path(@director) %>
+</div>
