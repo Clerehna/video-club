@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
+  get 'movies/show'
 
-  resources :directors
+  resources :directors do
+    resources :movies, only: [:show] do
+      get :movie
+    end
+  end
   # get 'directors', to: 'directors#index'
   # get 'directors', to: 'directors#new'
   # get 'directors/:id', to: 'directors#show', as: 'director'
